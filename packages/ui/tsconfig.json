@@ -1,4 +1,5 @@
 {
+  "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -8,11 +9,12 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "outDir": "./dist",
+    "emitDeclarationOnly": true,
+    "declaration": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
 
     /* Linting */
     "strict": true,

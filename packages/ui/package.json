@@ -5,6 +5,10 @@
   "type": "module",
   "index": "./src/index.ts",
   "main": "./src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/ui.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc && vite build",
@@ -16,11 +20,12 @@
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react-swc": "^3.6.0",
     "eslint": "^8.56.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
-    "@vitejs/plugin-react-swc": "^3.6.0"
+    "vite-plugin-dts": "^3.7.3"
   }
 }
