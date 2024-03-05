@@ -1,6 +1,8 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import react from "@vitejs/plugin-react-swc";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig({
   build: {
@@ -14,5 +16,5 @@ export default defineConfig({
       external: ["react", "react-dom", "react/jsx-runtime"],
     },
   },
-  plugins: [dts({ rollupTypes: true })],
+  plugins: [react(), libInjectCss(), dts({ rollupTypes: true })],
 });
