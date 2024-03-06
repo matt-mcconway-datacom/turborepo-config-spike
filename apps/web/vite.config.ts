@@ -6,4 +6,13 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  esbuild: {
+    logLevel: "debug",
+  },
+  build: {
+    sourcemap: true,
+  },
+  // optimizeDeps: {
+  //   include: ["@repo/ui"],
+  // },
 });

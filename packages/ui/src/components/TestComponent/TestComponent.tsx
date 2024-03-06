@@ -1,3 +1,4 @@
+import { ImportantButton } from "@repo/important-button";
 import styles from "./TestComponent.module.css";
 
 interface TestComponentProps extends React.RefAttributes<HTMLDivElement> {
@@ -16,6 +17,7 @@ export function TestComponent({
     <div {...attributes} className={styles[variant]}>
       {children}
       {disabled ? " disabled" : " enabled"}
+      <ImportantButton variant="secondary" />
     </div>
   );
 }

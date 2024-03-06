@@ -1,12 +1,12 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/important-button",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "exports": {
     ".": {
       "production": {
-        "import": "./dist/ui.js",
+        "import": "./dist/important-button.js",
         "types": "./dist/index.d.ts"
       },
       "default": "./src/index.ts"
@@ -16,9 +16,6 @@
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
-  },
-  "dependencies": {
-    "@repo/important-button": "workspace:*"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
