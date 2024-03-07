@@ -145,7 +145,7 @@ importers:
 
   packages/config-typescript: {}
 
-  packages/important-button:
+  packages/important-buttons:
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -189,9 +189,9 @@ importers:
 
   packages/ui:
     dependencies:
-      '@repo/important-button':
+      '@repo/important-buttons':
         specifier: workspace:*
-        version: link:../important-button
+        version: link:../important-buttons
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*

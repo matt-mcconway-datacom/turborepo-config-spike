@@ -1,4 +1,7 @@
-import { ImportantButton } from "@repo/important-button";
+import {
+  ImportantButton,
+  SlightlyLessImportantButton,
+} from "@repo/important-buttons";
 import styles from "./TestComponent.module.css";
 
 interface TestComponentProps extends React.RefAttributes<HTMLDivElement> {
@@ -18,6 +21,7 @@ export function TestComponent({
       {children}
       {disabled ? " disabled" : " enabled"}
       <ImportantButton variant="secondary" />
+      <SlightlyLessImportantButton variant="secondary" />
     </div>
   );
 }

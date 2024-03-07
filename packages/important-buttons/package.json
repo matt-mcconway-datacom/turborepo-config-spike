@@ -1,12 +1,12 @@
 {
-  "name": "@repo/important-button",
+  "name": "@repo/important-buttons",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "exports": {
     ".": {
       "production": {
-        "import": "./dist/important-button.js",
+        "import": "./dist/important-buttons.js",
         "types": "./dist/index.d.ts"
       },
       "default": "./src/index.ts"
