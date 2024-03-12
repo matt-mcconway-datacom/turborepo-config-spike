@@ -15,6 +15,7 @@ export default defineConfig({
       // into your library
       external: ["react", "react-dom", "react/jsx-runtime"],
     },
+    sourcemap: true,
   },
   plugins: [react(), libInjectCss(), dts({ rollupTypes: true })],
 });

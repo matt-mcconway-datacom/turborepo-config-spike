@@ -12,7 +12,4 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  // optimizeDeps: {
-  //   include: ["@repo/ui"],
-  // },
 });
